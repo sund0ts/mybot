@@ -128,12 +128,7 @@ async def revoke_cmd(update: Update, ctx: ContextTypes.DEFAULT_TYPE):
 
 async def contacts(update: Update, ctx: ContextTypes.DEFAULT_TYPE):
     kb = InlineKeyboardMarkup([
-        [InlineKeyboardButton("📸 Instagram", url="https://instagram.com/your_handle")],
-        [InlineKeyboardButton("✈️ Telegram канал", url="https://t.me/your_channel")],
-        [InlineKeyboardButton("▶️ YouTube", url="https://youtube.com/@your_channel")],
-        [InlineKeyboardButton("🐦 Twitter / X", url="https://twitter.com/your_handle")],
-        [InlineKeyboardButton("💼 LinkedIn", url="https://linkedin.com/in/your_profile")],
-        [InlineKeyboardButton("🌐 Сайт", url="https://yourwebsite.com")],
+        [InlineKeyboardButton("✈️ Telegram канал", url="https://t.me/macanxyecocina")],
     ])
     await update.message.reply_text(
         "🌐 *Контакты и соцсети*\n\nВыбери нужную платформу:",
@@ -145,7 +140,6 @@ async def contacts(update: Update, ctx: ContextTypes.DEFAULT_TYPE):
 
 FAQ = [
     ("❓ Как с вами связаться?", "Нажми «📩 Написать админу» и напиши свой вопрос — мы ответим в ближайшее время."),
-    ("❓ Часы работы?", "Мы онлайн с 9:00 до 21:00 МСК. В выходные — с 10:00 до 18:00."),
     ("❓ Как оставить отзыв?", "Нажми «⭐ Оставить отзыв» в меню."),
     ("❓ Где вы находитесь?", "Мы работаем онлайн и принимаем клиентов со всего мира."),
     ("❓ Как отписаться от рассылки?", "Напиши админу «отписаться» — мы исключим тебя из рассылок."),
